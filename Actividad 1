@@ -1,0 +1,24 @@
+//Rodriguez Barrera Jesus
+void main() {
+final auto=new Auto(precio:220000, pago_diferido:12); 
+final auto2=new Auto(precio:300000, pago_diferido:0);
+auto.datos("Jose"," BMW");
+print(auto);
+auto.datos("Juan","Ferrari");
+print(auto2);
+}
+class Auto{
+  int precio=0;
+  int pago_diferido =0;
+  Auto({int precio, int pago_diferido}){
+    this.precio=precio;
+    this.pago_diferido=pago_diferido;
+  }
+      String toString(){
+      return "precio: ${this.precio} pago diferido:${this.pago_diferido} meses";
+      } 
+  void datos(String nombre,String marca){
+    print("Soy el usuario: $nombre y la marca de mi auto es: $marca");
+  }
+
+}
